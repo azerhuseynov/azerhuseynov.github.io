@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboards — Azar Huseynov</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #FAF9F6;
+      --surface: #FFFFFF;
+      --text: #1C1C1C;
+      --muted: #6B6B6B;
+      --navy: #1F3B57;
+      --amber: #C98A2C;
+      --border: #E5E3DD;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', -apple-system, sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 60px 20px;
+    }
+    .page { width: 100%; max-width: 680px; }
+    .back {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      color: var(--muted);
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 24px;
+    }
+    .back:hover { color: var(--amber); }
+    h1 {
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--navy);
+      margin: 0 0 8px 0;
+    }
+    .intro {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+    .project {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 20px 22px;
+      margin-bottom: 14px;
+    }
+    .project-name {
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .project-desc {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.55;
+      margin-bottom: 14px;
+    }
+    .links a {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      color: var(--navy);
+      text-decoration: none;
+      border: 1px solid var(--border);
+      padding: 5px 12px;
+      border-radius: 5px;
+    }
+    .links a:hover { border-color: var(--amber); color: var(--amber); }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <a href="index.html" class="back">&larr; Back to portfolio</a>
+    <h1>Dashboards</h1>
+    <p class="intro">A few data visualization and analysis dashboards, built in Tableau.</p>
+
+    <div class="project">
+      <div class="project-name">Hotel Booking Cancellations</div>
+      <div class="project-desc">Exploratory dashboard analyzing ~119K hotel bookings, covering cancellation patterns by country, customer type, and market segment, to flag high-risk segments and estimate revenue lost to cancellations.</div>
+      <div class="links">
+        <a href="https://public.tableau.com/app/profile/azar.huseynov5933/viz/Hotel_Bookings_17887450376040/Dashboard1#1" target="_blank">View on Tableau Public</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-name">Tourist Satisfaction Survey Analysis</div>
+      <div class="project-desc">Analysis of tourist satisfaction survey responses, exploring rating patterns by demographic segment and survey validity, with a geographic breakdown of respondent locations.</div>
+      <div class="links">
+        <a href="https://public.tableau.com/app/profile/azar.huseynov5933/viz/TouristSatisfactionSurveyAnalysis/DASHBOARD" target="_blank">View on Tableau Public</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-name">Retail Sales Performance Dashboard</div>
+      <div class="project-desc">Sales, profit, and shipping performance analysis for a retail dataset, breaking down orders by date, shipping mode, and region.</div>
+      <div class="links">
+        <a href="https://public.tableau.com/app/profile/azar.huseynov5933/viz/RetailSalesPerformanceDashboard_17894267474830/DASHBOARD" target="_blank">View on Tableau Public</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
